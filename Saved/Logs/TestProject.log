@@ -1403,3 +1403,106 @@ LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
 [2025.08.25-00.02.53:546][651]LogD3D12RHI: Compiled PathTracingMainRG for RTPSO in 49154.48 ms.
 [2025.08.25-00.02.56:954][887]LogD3D12RHI: Compiled PathTracingMainRG for RTPSO in 52563.52 ms.
 [2025.08.25-00.03.05:041][246]LogD3D12RHI: Compiled PathTracingMainRG for RTPSO in 60650.35 ms.
+[2025.08.25-00.05.10:109][829]LogShaderCompilers: Display: ================================================
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Total job queries 18,301, among them cache hits 4,596 (25.11%), DDC hits 12,334 (67.40%), Duplicates 793 (4.33%)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Tracking 12,912 distinct input hashes that result in 11,830 distinct outputs (91.62%)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: RAM used: 158.15 MiB of 1.60 GiB budget. Usage: 9.65%
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Shaders Compiled: 578
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Jobs assigned 578, completed 578 (100%)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Average time worker was idle: 0.51 s
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Time job spent in pending queue: average 7.60 s, longest 34.35 s
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Job execution time: average 8.46 s, max 31.18 s
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Job life time (pending + execution): average 16.06 s, max 36.68
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Shader code size: total 9.294 MiB, numShaders 601, average 15.836 KiB, min 2.246 KiB, max 55.505 KiB
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 104.98 s
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.33%
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Jobs were issued in 150 batches (only local compilation was used), average 3.85 jobs/batch
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Average processing rate: 5.51 jobs/sec
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Total thread time: 761.024 s
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Total thread preprocess time: 215.188 s
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Percentage time preprocessing: 28.28%
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Effective parallelization: 7.25 (times faster than compiling all shaders on one thread). Compare with number of workers: 8 - 0.906151
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display:                                        FRayTracingLightingMS (compiled    1 times, average 5.93 sec, max 5.93 sec, min 5.93 sec)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display:                                  FPathTracingMaterialCHS_AHS (compiled   10 times, average 5.01 sec, max 15.66 sec, min 1.88 sec)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display:                          FPathTracingVolumetricCloudMaterial (compiled    1 times, average 4.02 sec, max 4.02 sec, min 4.02 sec)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display:                                       FRayTracingSkyLightRGS (compiled   16 times, average 3.96 sec, max 5.30 sec, min 2.18 sec)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display:                   TMaterialCHSFNoLightMapPolicyFAnyHitShader (compiled   10 times, average 3.82 sec, max 7.46 sec, min 1.90 sec)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display:                        FLumenReflectionHardwareRayTracingRGS - 29.30% of total time (compiled   80 times, average 2.79 sec, max 7.31 sec, min 2.19 sec)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display:                                       FRayTracingSkyLightRGS - 8.33% of total time (compiled   16 times, average 3.96 sec, max 5.30 sec, min 2.18 sec)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display:                                  FPathTracingMaterialCHS_AHS - 6.58% of total time (compiled   10 times, average 5.01 sec, max 15.66 sec, min 1.88 sec)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 6.19% of total time (compiled   45 times, average 1.05 sec, max 7.22 sec, min 0.33 sec)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display:                   TMaterialCHSFNoLightMapPolicyFAnyHitShader - 5.02% of total time (compiled   10 times, average 3.82 sec, max 7.46 sec, min 1.90 sec)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: === Material stats ===
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Materials Cooked:        0
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Materials Translated:    143
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Material Total Translate Time: 0.11 s
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Material Translation Only: 0.05 s (42%)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2025.08.25-00.05.10:110][829]LogShaderCompilers: Display: Material Cache Hits: 0 (0%)
+[2025.08.25-00.05.10:111][829]LogShaderCompilers: Display: ================================================
+[2025.08.25-00.21.49:760][832]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_0
+[2025.08.25-00.21.51:540][891]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_1
+[2025.08.25-00.22.22:759][670]LogPSOHitching: Encountered 250 PSO creation hitches so far (83 graphics, 167 compute). 0 of them were precached.
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: ================================================
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Total job queries 18,329, among them cache hits 4,600 (25.10%), DDC hits 12,349 (67.37%), Duplicates 796 (4.34%)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Tracking 12,933 distinct input hashes that result in 11,848 distinct outputs (91.61%)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: RAM used: 158.28 MiB of 1.60 GiB budget. Usage: 9.66%
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Shaders Compiled: 584
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Jobs assigned 584, completed 584 (100%)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Average time worker was idle: 24.40 s
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Time job spent in pending queue: average 7.52 s, longest 34.35 s
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Job execution time: average 8.39 s, max 31.18 s
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Job life time (pending + execution): average 15.91 s, max 36.68
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Shader code size: total 9.354 MiB, numShaders 607, average 15.78 KiB, min 2.246 KiB, max 55.505 KiB
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 108.95 s
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.33%
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Jobs were issued in 156 batches (only local compilation was used), average 3.74 jobs/batch
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Average processing rate: 5.36 jobs/sec
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Total thread time: 765.734 s
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Total thread preprocess time: 215.563 s
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Percentage time preprocessing: 28.15%
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Effective parallelization: 7.03 (times faster than compiling all shaders on one thread). Compare with number of workers: 8 - 0.878523
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display:                                        FRayTracingLightingMS (compiled    1 times, average 5.93 sec, max 5.93 sec, min 5.93 sec)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display:                                  FPathTracingMaterialCHS_AHS (compiled   10 times, average 5.01 sec, max 15.66 sec, min 1.88 sec)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display:                          FPathTracingVolumetricCloudMaterial (compiled    1 times, average 4.02 sec, max 4.02 sec, min 4.02 sec)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display:                                       FRayTracingSkyLightRGS (compiled   16 times, average 3.96 sec, max 5.30 sec, min 2.18 sec)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display:                         FLumenVisualizeHardwareRayTracingRGS (compiled    8 times, average 3.64 sec, max 8.47 sec, min 2.56 sec)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display:                        FLumenReflectionHardwareRayTracingRGS - 29.12% of total time (compiled   80 times, average 2.79 sec, max 7.31 sec, min 2.19 sec)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display:                                       FRayTracingSkyLightRGS - 8.27% of total time (compiled   16 times, average 3.96 sec, max 5.30 sec, min 2.18 sec)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display:                                  FPathTracingMaterialCHS_AHS - 6.54% of total time (compiled   10 times, average 5.01 sec, max 15.66 sec, min 1.88 sec)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 6.29% of total time (compiled   47 times, average 1.03 sec, max 7.22 sec, min 0.33 sec)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display:                   TMaterialCHSFNoLightMapPolicyFAnyHitShader - 5.14% of total time (compiled   11 times, average 3.58 sec, max 7.46 sec, min 1.16 sec)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: === Material stats ===
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Materials Cooked:        0
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Materials Translated:    143
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Material Total Translate Time: 0.11 s
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Material Translation Only: 0.05 s (42%)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: Material Cache Hits: 0 (0%)
+[2025.08.25-00.23.08:568][559]LogShaderCompilers: Display: ================================================
+[2025.08.25-00.23.23:320][218]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Engine/BasicShapes/Cube.Cube
+[2025.08.25-00.23.23:320][218]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Engine/BasicShapes/Cube.Cube
+[2025.08.25-00.23.23:326][218]LogActorFactory: Actor Factory spawned StaticMesh /Engine/BasicShapes/Cube.Cube as actor: StaticMeshActor /Game/ThirdPerson/Lvl_ThirdPerson.Lvl_ThirdPerson:PersistentLevel.StaticMeshActor_UAID_2CF05D9BD934658802_1945439887
+[2025.08.25-00.23.23:327][218]LogActorFactory: Actor Factory spawned StaticMesh /Engine/BasicShapes/Cube.Cube as actor: StaticMeshActor /Game/ThirdPerson/Lvl_ThirdPerson.Lvl_ThirdPerson:PersistentLevel.StaticMeshActor_UAID_2CF05D9BD934658802_1945439887
+[2025.08.25-00.23.59:523][168]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.08.25-00.23.59:562][168]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/0/Z7/9SBXC1C6ZTH907Z1LGSBTK
+[2025.08.25-00.23.59:562][168]LogSavePackage: Moving '../../../../../../Users/jjeff/Documents/Unreal Projects/TestProject/Saved/9SBXC1C6ZTH907Z1LGSBTKE26F43334D3F5EA81862109E1F217599.tmp' to '../../../../../../Users/jjeff/Documents/Unreal Projects/TestProject/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/0/Z7/9SBXC1C6ZTH907Z1LGSBTK.uasset'
+[2025.08.25-00.23.59:572][168]LogFileHelpers: InternalPromptForCheckoutAndSave took 49.753 ms
+[2025.08.25-00.23.59:601][168]LogContentValidation: Display: Starting to validate 1 assets
+[2025.08.25-00.23.59:601][168]LogContentValidation: Enabled validators:
+[2025.08.25-00.23.59:601][168]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.08.25-00.23.59:601][168]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.08.25-00.23.59:601][168]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.08.25-00.23.59:601][168]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.08.25-00.23.59:601][168]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.08.25-00.23.59:601][168]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.08.25-00.23.59:602][168]AssetCheck: /Game/ThirdPerson/Lvl_ThirdPerson Validating asset
+[2025.08.25-00.23.59:630][168]LogSourceControl: Display: Uncontrolled Changelist persistency file saved ../../../../../../Users/jjeff/Documents/Unreal Projects/TestProject/Saved/SourceControl/UncontrolledChangelists.json
